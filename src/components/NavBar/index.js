@@ -1,14 +1,15 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
+import Logo from '../../images/AD-logo.png'
 import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavBarElements'
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
     return (
       <>
         <Nav>
           <NavBarContainer>
-            <NavLogo to='/'>Aravis Designs</NavLogo>
-            <MobileIcon>
+            <NavLogo to='/' src={Logo} />
+            <MobileIcon onClick={toggle} >
               <FaBars />
             </MobileIcon>
             <NavMenu>

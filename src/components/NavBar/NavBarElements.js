@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { Link as LinkScroll } from 'react-scroll';
-import { Link as LinkRouter } from 'react-router-dom';
+import styled from 'styled-components'
+import { Link as LinkScroll } from 'react-scroll'
+import { Link as LinkRouter } from 'react-router-dom'
 
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,17 +20,18 @@ export const Nav = styled.nav`
 `;
 
 export const NavBarContainer = styled.div`
-    color: #fff;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  padding: 8px 24px;
+  margin: 16px 0;
+  max-width: 2800px;
 `;
 
-export const NavLogo = styled(LinkRouter)`
+export const NavLogo = styled.img`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
