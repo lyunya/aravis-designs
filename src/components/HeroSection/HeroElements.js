@@ -3,6 +3,7 @@ import {
   MdKeyboardArrowRight,
   MdArrowForward,
   MdKeyboardArrowDown,
+  MdArrowDownward
 } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
@@ -14,6 +15,7 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
+
 `;
 
 export const HeroBg = styled.img`
@@ -25,6 +27,8 @@ export const HeroBg = styled.img`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+
+
 `;
 
 export const HeroContent = styled.div`
@@ -65,7 +69,6 @@ export const HeroH1Bottom = styled.h1`
   }
 `;
 
-
 export const HeroP = styled.p`
   margin-top: 24px;
   color: black;
@@ -90,12 +93,12 @@ export const HeroContactBtnWrapper = styled.div`
 `;
 
 export const HeroServicesBtnWrapper = styled.div`
-z-index: 999;
-position: absolute;
-bottom: 24px;
-display: flex;
-flex-direction: column;
-`
+  z-index: 999;
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+`;
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
@@ -109,4 +112,10 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 
 export const ArrowDown = styled(MdKeyboardArrowDown)`
   font-size: 60px;
+  color: white;
+`;
+
+export const ArrowDownward = styled(MdArrowDownward)`
+  font-size: 60px;
+  color: white;
 `;

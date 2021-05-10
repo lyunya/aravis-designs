@@ -37,11 +37,7 @@ const HeroSection = () => {
         </HeroContactBtnWrapper>
       </HeroContent>
       <HeroServicesBtnWrapper>
-          {
-            <ArrowDown
-              to='services'
-            />
-          }
+        <ArrowDown to='services' />
       </HeroServicesBtnWrapper>
     </HeroContainer>
   );
