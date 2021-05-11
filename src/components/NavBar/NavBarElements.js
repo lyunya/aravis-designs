@@ -40,6 +40,8 @@ export const NavLogo = styled.img`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  max-width: 100%;
+  max-height: 100%;
 `;
 
 export const MobileIcon = styled.div`
