@@ -13,12 +13,12 @@ const Home = () => {
 
 
     return (
-        <>
-           <SideBar isOpen={isOpen} toggle={toggle} />
-           <NavBar toggle={toggle} />
-           <HeroSection />
-           <ServicesSection />
-        </>
+      <>
+        <SideBar isOpen={isOpen} toggle={toggle} />
+        <NavBar toggle={toggle} />
+        <HeroSection title='services' />
+        <ServicesSection />
+      </>
     )
 }
 

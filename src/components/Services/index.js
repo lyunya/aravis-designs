@@ -20,7 +20,7 @@ import {
 const ServicesSection = () => {
   return (
     <>
-      <ServicesContainer>
+      <ServicesContainer id='services'>
         <ServicesWrapper>
           <Service>
             <Devices />

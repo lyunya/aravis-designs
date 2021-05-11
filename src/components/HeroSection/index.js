@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import HeroImage from '../../images/dental-hero.jpg';
-import { Button } from '../ButtonElement';
+import React, { useState } from 'react'
+import HeroImage from '../../images/dental-hero.jpg'
+import { Button } from '../ButtonElement'
+import { Link } from 'react-scroll'
 import {
   HeroContainer,
   HeroBg,
@@ -12,15 +13,15 @@ import {
   HeroServicesBtnWrapper,
   ArrowForward,
   ArrowRight,
-  ArrowDown
-} from './HeroElements';
+  ArrowDown,
+} from './HeroElements'
 
 const HeroSection = () => {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(false)
 
   const onHover = () => {
-    setHover(!hover);
-  };
+    setHover(!hover)
+  }
   return (
     <HeroContainer>
       <HeroBg src={HeroImage}></HeroBg>
@@ -31,16 +32,34 @@ const HeroSection = () => {
           Let us handle your online presence, so you can focus on your patients.
         </HeroP>
         <HeroContactBtnWrapper>
-          <Button to='contact' onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to='contact'
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+          >
             Request a Quote {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroContactBtnWrapper>
       </HeroContent>
       <HeroServicesBtnWrapper>
-        <ArrowDown to='services' />
+        <Link
+          activeClass='active'
+          to='services'
+          spy={true}
+          smooth={true}
+          // offset={-80}
+          duration={500}
+        >
+          <ArrowDown />
+        </Link>
       </HeroServicesBtnWrapper>
     </HeroContainer>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection
