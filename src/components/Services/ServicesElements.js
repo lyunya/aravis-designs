@@ -9,13 +9,11 @@ import {
 } from '@carbon/icons-react';
 
 export const ServicesContainer = styled.div`
-  background-color: #e6d5cd;
+  background-color: #f4ebd0;
   display: flex;
   flex-direction: row;
   height: 100vh;
-  @media screen and (max-width: 768px) {
-    padding: 20px 0;
-  }
+  padding: 20px 0;
 `;
 
 export const ServicesWrapper = styled.div`
@@ -28,6 +26,10 @@ export const ServicesWrapper = styled.div`
   margin-right: auto;
   margin-left: 90px;
   margin-top: 60px;
+
+  @media screen and (min-width: 1100px) {
+    margin-top: 180px;
+  }
 `;
 
 export const DescriptionWrapper = styled.div`
@@ -38,21 +40,28 @@ export const DescriptionWrapper = styled.div`
   width: 50%;
   max-width: 1100px;
   margin-right: 90px;
-  margin-left: auto;
+  margin-left: 10%;
   margin-top: 60px;
+
+  @media screen and (min-width: 1100px) {
+    margin-top: 180px;
+  }
 `;
 
 export const Service = styled.div`
   display: block;
-  max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
   color: #000000;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  
+  @media screen and (max-width: 1400px) {
+    font-size: 16px;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -126,8 +135,12 @@ export const DescriptionP = styled.p`
 `;
 
 export const ContentImage = styled.img`
-  width: 80%;
+  width: 600px;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
-`
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
+`;

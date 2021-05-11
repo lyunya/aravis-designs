@@ -7,28 +7,23 @@ import {
 } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
-  /* background: #0c0c0c; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
   height: 100vh;
+  width: 100vw;
   position: relative;
   z-index: 1;
-
+  overflow: hidden;
 `;
 
 export const HeroBg = styled.img`
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100vw;
   height: 100vh;
-  overflow: hidden;
-
-
+  width: 100%;
 `;
 
 export const HeroContent = styled.div`

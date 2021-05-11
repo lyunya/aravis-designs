@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-scroll';
+// import { Button } from 'react-scroll';
 import ContentTeam from '../../images/content-team.svg'
 import {
   ServicesContainer,
