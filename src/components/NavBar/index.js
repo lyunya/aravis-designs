@@ -14,33 +14,44 @@ const NavBar = ({ toggle }) => {
       <>
         <Nav>
           <NavBarContainer>
-            <NavLogo to='/' src={Logo} onClick={toggleHome}/>
-            <MobileIcon onClick={toggle} >
+            <NavLogo to='/' src={Logo} onClick={toggleHome} />
+            <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to='services'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact={true}
-                >Services</NavLinks>
+                <NavLinks
+                  to='services'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                >
+                  Services
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='portfolio'>Portfolio</NavLinks>
+                <NavLinks
+                  to='portfolio'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                >
+                  Portfolio
+                </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to='contact'>Contact</NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-                <NavBtnLink to='/contact'>Let's Talk</NavBtnLink>
+              <NavBtnLink to='/contact'>Let's Talk</NavBtnLink>
             </NavBtn>
           </NavBarContainer>
         </Nav>
       </>
-    );
+    )
 }
 
 export default NavBar

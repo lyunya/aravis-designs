@@ -13,7 +13,7 @@ export const ServicesContainer = styled.div`
   display: flex;
   flex-direction: row;
   height: 100vh;
-  padding: 20px 0;
+  padding: 30px 0;
 `;
 
 export const ServicesWrapper = styled.div`
@@ -26,10 +26,6 @@ export const ServicesWrapper = styled.div`
   margin-right: auto;
   margin-left: 90px;
   margin-top: 60px;
-
-  @media screen and (min-width: 1100px) {
-    margin-top: 180px;
-  }
 `;
 
 export const DescriptionWrapper = styled.div`
@@ -42,10 +38,6 @@ export const DescriptionWrapper = styled.div`
   margin-right: 90px;
   margin-left: 10%;
   margin-top: 60px;
-
-  @media screen and (min-width: 1100px) {
-    margin-top: 180px;
-  }
 `;
 
 export const Service = styled.div`
