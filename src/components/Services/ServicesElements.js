@@ -11,50 +11,70 @@ import {
 export const ServicesContainer = styled.div`
   background-color: #f4ebd0;
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  flex-direction: column;
+  height: 100%;
   padding: 30px 0;
-`;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    height: 100vh;
+  }
+`
 
 export const ServicesWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  order: 2;
   z-index: 1;
   height: 100%;
-  width: 50%;
+  width: 80%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: 90px;
   margin-top: 60px;
-`;
+
+  @media screen and (min-width: 768px) {
+    order: 1;
+    width: 50%;
+  }
+`
 
 export const DescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  order: 1;
   z-index: 1;
   height: 100%;
-  width: 50%;
+  width: 60%;
   max-width: 1100px;
-  margin-right: 90px;
-  margin-left: 10%;
   margin-top: 60px;
-`;
+
+  @media screen and (min-width: 768px) {
+    order: 2;
+    width: 50%;
+    margin-right: 90px;
+    margin-left: 10%;
+  }
+`
 
 export const Service = styled.div`
   display: block;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 12px;
   color: #000000;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 700;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
-  
-  @media screen and (max-width: 1400px) {
-    font-size: 16px;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 60px;
   }
-`;
+`
 
 export const BtnWrap = styled.div`
   display: flex;
@@ -99,14 +119,10 @@ export const Tools = styled(Tools32)`
 
 export const DescriptionH1 = styled.h1`
   color: #000000;
-  font-size: 36px;
+  font-size: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 40px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
   }
 `;
 
@@ -114,20 +130,16 @@ export const DescriptionH1 = styled.h1`
 export const DescriptionP = styled.p`
   margin-top: 24px;
   color: black;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 20px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
   }
 `;
 
 export const ContentImage = styled.img`
-  width: 600px;
+  width: 60%;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;

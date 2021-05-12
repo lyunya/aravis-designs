@@ -24,15 +24,15 @@ const ServicesSection = () => {
         <ServicesWrapper>
           <Service>
             <Devices />
-            Responsive: Mobile, Tablet, and All-Device Friendly
+            Responsive: Mobile, Tablet, and Desktop
           </Service>
           <Service>
             <Search />
-            Optimized: SEO-Friendly in its Code and Content Creation
+            Optimized: SEO-Friendly
           </Service>
           <Service>
             <Social />
-            Social Media Management - Facebook, Yelp, Twitter
+            Social Media Management
           </Service>
           <Service>
             <Branding />

@@ -52,7 +52,7 @@ const HeroSection = () => {
           to='services'
           spy={true}
           smooth={true}
-          // offset={-80}
+          offset={-80}
           duration={500}
         >
           <ArrowDown />
