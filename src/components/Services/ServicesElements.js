@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {
+  Devices16,
   Devices32,
   Chat32,
   Search32,
@@ -28,15 +29,14 @@ export const ServicesWrapper = styled.div`
   order: 2;
   z-index: 1;
   height: 100%;
-  width: 80%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: 90px;
-  margin-top: 60px;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     order: 1;
     width: 50%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: 90px;
   }
 `
 
@@ -45,13 +45,13 @@ export const DescriptionWrapper = styled.div`
   flex-direction: column;
   order: 1;
   z-index: 1;
-  height: 100%;
   width: 60%;
   max-width: 1100px;
-  margin-top: 60px;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     order: 2;
+    height: 100%;
     width: 50%;
     margin-right: 90px;
     margin-left: 10%;
@@ -63,8 +63,8 @@ export const Service = styled.div`
   padding-top: 0;
   padding-bottom: 12px;
   color: #000000;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 12px;
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -81,11 +81,26 @@ export const BtnWrap = styled.div`
   justify-content: flex-start;
 `;
 
-export const Devices = styled(Devices32)`
-  margin-left: 8px;
+export const DevicesLarge = styled(Devices32)`
+  display: none;
   margin-right: 15px;
-  font-size: 24px;
-`;
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-left: 8px;
+  }
+`
+
+export const DevicesSmall = styled(Devices16)`
+  display: inline;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    margin-left: 8px;
+  }
+`
+
 
 export const Search = styled(Search32)`
   margin-left: 8px;
@@ -143,6 +158,7 @@ export const ContentImage = styled.img`
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     width: 80%;

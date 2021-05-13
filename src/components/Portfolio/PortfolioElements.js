@@ -17,6 +17,7 @@ export const DescriptionWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: 90px;
+  justify-content: center;
 `
 
 export const WorkWrapper = styled.div`
@@ -28,6 +29,7 @@ export const WorkWrapper = styled.div`
   max-width: 1100px;
   margin-right: 90px;
   margin-left: 10%;
+  justify-content: center;
 `
 
 export const DescriptionH1 = styled.h1`

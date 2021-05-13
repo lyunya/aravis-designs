@@ -6,7 +6,8 @@ import {
   ServicesWrapper,
   DescriptionWrapper,
   Service,
-  Devices,
+  DevicesSmall,
+  DevicesLarge,
   Search,
   Social,
   Branding,
@@ -23,7 +24,8 @@ const ServicesSection = () => {
       <ServicesContainer id='services'>
         <ServicesWrapper>
           <Service>
-            <Devices />
+            <DevicesSmall />
+            <DevicesLarge />
             Responsive: Mobile, Tablet, and Desktop
           </Service>
           <Service>
@@ -58,7 +60,7 @@ const ServicesSection = () => {
         </DescriptionWrapper>
       </ServicesContainer>
     </>
-  );
+  )
 };
 
 export default ServicesSection;
