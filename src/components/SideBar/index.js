@@ -9,19 +9,19 @@ const SideBar = ({ isOpen, toggle }) => {
         </Icon>
         <SideBarWrapper>
           <SideBarMenu>
-            <SideBarLink to='services' onClick={toggle}>
+            <SideBarLink to='services' onClick={toggle} offset={-80}>
               Services
             </SideBarLink>
-            <SideBarLink to='portfolio' onClick={toggle}>
+            <SideBarLink to='portfolio' onClick={toggle} offset={-80}>
               Portfolio
             </SideBarLink>
-            <SideBarLink to='contact' onClick={toggle}>
+            <SideBarLink to='contact' onClick={toggle} offset={-80}>
               Let's Talk
             </SideBarLink>
           </SideBarMenu>
         </SideBarWrapper>
       </SideBarContainer>
-    );
+    )
 }
 
 export default SideBar

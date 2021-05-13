@@ -2,10 +2,15 @@ import styled from 'styled-components';
 import {
   Devices16,
   Devices32,
+  Chat16,
   Chat32,
+  Search16,
   Search32,
+  ColorPalette16,
   ColorPalette32,
+  Analytics16,
   Analytics32,
+  Tools16,
   Tools32,
 } from '@carbon/icons-react';
 
@@ -13,13 +18,13 @@ export const ServicesContainer = styled.div`
   background-color: #f4ebd0;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 30px 0;
+  height: 100vh;
   align-items: center;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    height: 100vh;
+    padding-top: 0;
   }
 `
 
@@ -61,7 +66,7 @@ export const DescriptionWrapper = styled.div`
 export const Service = styled.div`
   display: block;
   padding-top: 0;
-  padding-bottom: 12px;
+  padding-bottom: 18px;
   color: #000000;
   font-size: 12px;
   line-height: 12px;
@@ -69,7 +74,7 @@ export const Service = styled.div`
   letter-spacing: 1.2px;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 18px;
     padding-bottom: 60px;
@@ -79,16 +84,6 @@ export const Service = styled.div`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
-`;
-
-export const DevicesLarge = styled(Devices32)`
-  display: none;
-  margin-right: 15px;
-
-  @media screen and (min-width: 768px) {
-    display: inline;
-    margin-left: 8px;
-  }
 `
 
 export const DevicesSmall = styled(Devices16)`
@@ -101,36 +96,115 @@ export const DevicesSmall = styled(Devices16)`
   }
 `
 
-
-export const Search = styled(Search32)`
-  margin-left: 8px;
+export const DevicesLarge = styled(Devices32)`
+  display: none;
   margin-right: 15px;
-  font-size: 24px;
-`;
 
-export const Social = styled(Chat32)`
-  margin-left: 8px;
-  margin-right: 15px;
-  font-size: 24px;
-`;
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-left: 8px;
+  }
+`
 
-export const Branding = styled(ColorPalette32)`
-  margin-left: 8px;
+export const ChatSmall = styled(Chat16)`
+  display: inline;
   margin-right: 15px;
-  font-size: 24px;
-`;
 
-export const Analytics = styled(Analytics32)`
-  margin-left: 8px;
-  margin-right: 15px;
-  font-size: 24px;
-`;
+  @media screen and (min-width: 768px) {
+    display: none;
+    margin-left: 8px;
+  }
+`
 
-export const Tools = styled(Tools32)`
-  margin-left: 8px;
+export const ChatLarge = styled(Chat32)`
+  display: none;
   margin-right: 15px;
-  font-size: 24px;
-`;
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-left: 8px;
+  }
+`
+export const SearchSmall = styled(Search16)`
+  display: inline;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    margin-left: 8px;
+  }
+`
+
+export const SearchLarge = styled(Search32)`
+  display: none;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-left: 8px;
+  }
+`
+
+export const ColorPaletteSmall = styled(ColorPalette16)`
+  display: inline;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    margin-left: 8px;
+  }
+`
+
+export const ColorPaletteLarge = styled(ColorPalette32)`
+  display: none;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-left: 8px;
+  }
+`
+
+export const AnalyticsSmall = styled(Analytics16)`
+  display: inline;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    margin-left: 8px;
+  }
+`
+
+export const AnalyticsLarge = styled(Analytics32)`
+  display: none;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-left: 8px;
+  }
+`
+
+export const ToolsSmall = styled(Tools16)`
+  display: inline;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    margin-left: 8px;
+  }
+`
+
+export const ToolsLarge = styled(Tools32)`
+  display: none;
+  margin-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-left: 8px;
+  }
+`
+
 
 export const DescriptionH1 = styled.h1`
   color: #000000;
@@ -154,7 +228,7 @@ export const DescriptionP = styled.p`
 `;
 
 export const ContentImage = styled.img`
-  width: 60%;
+  width: 100%;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;

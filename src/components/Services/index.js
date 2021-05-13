@@ -8,14 +8,19 @@ import {
   Service,
   DevicesSmall,
   DevicesLarge,
-  Search,
-  Social,
-  Branding,
-  Analytics,
-  Tools,
+  ColorPaletteSmall,
+  ColorPaletteLarge,
   DescriptionH1,
   DescriptionP,
-  ContentImage
+  ContentImage,
+  SearchSmall,
+  SearchLarge,
+  ChatSmall,
+  ChatLarge,
+  AnalyticsLarge,
+  AnalyticsSmall,
+  ToolsSmall,
+  ToolsLarge,
 } from './ServicesElements';
 
 const ServicesSection = () => {
@@ -29,23 +34,28 @@ const ServicesSection = () => {
             Responsive: Mobile, Tablet, and Desktop
           </Service>
           <Service>
-            <Search />
+            <SearchSmall />
+            <SearchLarge />
             Optimized: SEO-Friendly
           </Service>
           <Service>
-            <Social />
+            <ChatSmall />
+            <ChatLarge />
             Social Media Management
           </Service>
           <Service>
-            <Branding />
+            <ColorPaletteSmall />
+            <ColorPaletteLarge />
             Branding/Graphic Design
           </Service>
           <Service>
-            <Analytics />
+            <AnalyticsSmall />
+            <AnalyticsLarge />
             Analytics Traffic Report
           </Service>
           <Service>
-            <Tools />
+            <ToolsSmall />
+            <ToolsLarge />
             Website Maintenance
           </Service>
         </ServicesWrapper>
