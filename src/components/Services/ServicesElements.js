@@ -20,9 +20,9 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   height: 100vh;
   align-items: center;
-  justify-content: center;
+  padding-top: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1400px) {
     flex-direction: row;
     padding-top: 0;
   }
@@ -36,7 +36,7 @@ export const ServicesWrapper = styled.div`
   height: 100%;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1400px) {
     order: 1;
     width: 50%;
     max-width: 1100px;
@@ -54,7 +54,7 @@ export const DescriptionWrapper = styled.div`
   max-width: 1100px;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1400px) {
     order: 2;
     height: 100%;
     width: 50%;
@@ -68,13 +68,18 @@ export const Service = styled.div`
   padding-top: 0;
   padding-bottom: 18px;
   color: #000000;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 12px;
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media screen and (min-width: 1400px) {
     font-size: 18px;
     line-height: 18px;
     padding-bottom: 60px;

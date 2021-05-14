@@ -7,7 +7,7 @@ export const PortfolioContainer = styled.div`
   height: 100vh;
   justify-content: center;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1400px) {
     flex-direction: row;
   }
 `
@@ -18,8 +18,9 @@ export const DescriptionWrapper = styled.div`
   z-index: 1;
   order: 2;
   justify-content: center;
+  padding: 0 20px;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1400px) {
     order: 1;
     width: 50%;
     max-width: 1100px;
@@ -39,7 +40,7 @@ export const WorkWrapper = styled.div`
   margin-left: 10%;
   justify-content: center;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1400px) {
     order: 2;
     height: 100%;
     width: 50%;
@@ -53,7 +54,7 @@ export const DescriptionH1 = styled.h1`
   color: #000000;
   font-size: 36px;
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 1400px) {
     font-size: 40px;
   }
 
@@ -68,7 +69,7 @@ export const DescriptionP = styled.p`
   font-size: 20px;
   text-align: left;
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 1400px) {
     font-size: 20px;
   }
 
