@@ -54,12 +54,13 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1Top = styled.h1`
-  color: #fff;
+  color: #000;
   font-size: 32px;
   text-align: center;
 
   @media screen and (min-width: 480px) {
     font-size: 40px;
+    color: #fff;
   }
 
   @media screen and (min-width: 768px) {
