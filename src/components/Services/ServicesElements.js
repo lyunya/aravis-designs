@@ -18,13 +18,16 @@ export const ServicesContainer = styled.div`
   background-color: #f4ebd0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
   align-items: center;
   padding-top: 30px;
 
   @media screen and (min-width: 1400px) {
     flex-direction: row;
     padding-top: 0;
+    min-height: 100vh;
   }
 `
 
@@ -35,6 +38,7 @@ export const ServicesWrapper = styled.div`
   z-index: 1;
   height: 100%;
   justify-content: center;
+  text-align: center;
 
   @media screen and (min-width: 1400px) {
     order: 1;
