@@ -37,7 +37,6 @@ export const ServicesWrapper = styled.div`
   order: 2;
   z-index: 1;
   justify-content: center;
-<<<<<<< HEAD
   margin-left: 5%;
 
   @media screen and (min-width: 900px) {
@@ -46,9 +45,6 @@ export const ServicesWrapper = styled.div`
     height: 20%;
     margin-top: 80px;
   }
-=======
-  text-align: center;
->>>>>>> d8678fdc713b1c4333f15832d021e2997d6193f2
 
   @media screen and (min-width: 1400px) {
     display: flex;

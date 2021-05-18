@@ -10,11 +10,13 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
   position: relative;
   z-index: 1;
   overflow: hidden;
-`;
+`
 
 export const HeroDesktopBg = styled.img`
   top: 0;
