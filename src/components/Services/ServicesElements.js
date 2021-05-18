@@ -33,15 +33,24 @@ export const ServicesWrapper = styled.div`
   flex-direction: column;
   order: 2;
   z-index: 1;
-  height: 100%;
   justify-content: center;
+  margin-left: 5%;
+
+  @media screen and (min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, .8fr));
+    height: 20%;
+    margin-top: 80px;
+  }
 
   @media screen and (min-width: 1400px) {
+    display: flex;
+    flex-direction: column;
     order: 1;
     width: 50%;
     max-width: 1100px;
-    margin-right: auto;
-    margin-left: 90px;
+    align-items: stretch;
+    margin-left: 10%;
   }
 `
 

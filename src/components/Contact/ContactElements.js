@@ -2,19 +2,20 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  position: relative;
   height: 100vh;
+  width: 100%;
   z-index: 1;
+  overflow: hidden;
 `
 
 export const ContactContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 10%;
+  width: 100%;
 `
 
 export const ContactBg = styled.img`
@@ -26,15 +27,26 @@ export const ContactBg = styled.img`
   width: 100%;
 `
 
+export const ContactHeader = styled.h1`
+  text-align: center;
+`
+
 export const ContactH1 = styled.h1`
   color: #fff;
-  font-size: 56px;
-  
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
+  font-size: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+`
+
+export const ContactH2 = styled.h1`
+  color: #fff;
+  font-size: 16px;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
   }
 `

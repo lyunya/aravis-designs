@@ -34,10 +34,8 @@ export const WorkWrapper = styled.div`
   flex-direction: column;
   z-index: 1;
   order: 1;
-  width: 80%;
-  max-width: 1100px;
-  margin-right: 90px;
-  margin-left: 10%;
+  width: 100%;
+  max-width: 900px;
   justify-content: center;
 
   @media screen and (min-width: 1400px) {
