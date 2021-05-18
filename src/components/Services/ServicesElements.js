@@ -83,7 +83,6 @@ export const Service = styled.div`
   padding-bottom: 18px;
   color: #000000;
   font-size: 14px;
-  line-height: 12px;
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
