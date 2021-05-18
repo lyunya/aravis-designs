@@ -18,11 +18,12 @@ export const ServicesContainer = styled.div`
   background-color: #f4ebd0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   align-items: center;
   padding-top: 30px;
+  padding-bottom: 20px;
 
   @media screen and (min-width: 1400px) {
     flex-direction: row;

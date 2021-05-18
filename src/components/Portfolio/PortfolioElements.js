@@ -8,9 +8,7 @@ export const PortfolioContainer = styled.div`
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   justify-content: center;
-  width: fit-content;
-  block-size: fit-content;
-  padding: 30px 0;
+  padding: 60px 0;
 
   @media screen and (min-width: 1400px) {
     flex-direction: row;
@@ -41,9 +39,10 @@ export const WorkWrapper = styled.div`
   flex-direction: column;
   z-index: 1;
   order: 1;
-  width: 100%;
+  width: 60%;
   max-width: 900px;
   justify-content: center;
+  margin-left: 25%;
 
   @media screen and (min-width: 1400px) {
     order: 2;
@@ -84,12 +83,8 @@ export const DescriptionP = styled.p`
 `
 
 export const PortfolioSlide = styled.div`
-  max-width: 600px;
-
-  @media screen and (min-width: 1400px) {
     max-width: 100%;
     height: auto;
-  }
 `
 
 export const Portfolioimg = styled.img`
