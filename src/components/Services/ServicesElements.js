@@ -18,6 +18,7 @@ export const ServicesContainer = styled.div`
   background-color: #f4ebd0;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
