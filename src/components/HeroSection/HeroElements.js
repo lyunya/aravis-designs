@@ -10,7 +10,7 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   position: relative;

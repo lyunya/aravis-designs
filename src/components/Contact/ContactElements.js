@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContactContainer = styled.div`
   display: flex;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   width: 100%;
