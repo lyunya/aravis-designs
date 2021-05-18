@@ -18,14 +18,15 @@ export const ServicesContainer = styled.div`
   background-color: #f4ebd0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 20px;
-
-  @media screen and (min-width: 1400px) {
+  overflow: hidden;
+  
+   @media screen and (min-width: 1400px) {
     flex-direction: row;
     padding-top: 0;
     min-height: 100vh;
@@ -37,12 +38,11 @@ export const ServicesWrapper = styled.div`
   flex-direction: column;
   order: 2;
   z-index: 1;
-  justify-content: center;
-  margin-left: 5%;
+  width: 90%;
 
   @media screen and (min-width: 900px) {
     display: grid;
-    grid-template-columns: repeat(2, minmax(240px, .8fr));
+    grid-template-columns: repeat(2, minmax(240px, 0.8fr));
     height: 20%;
     margin-top: 80px;
   }

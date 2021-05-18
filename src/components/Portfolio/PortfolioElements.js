@@ -4,11 +4,12 @@ export const PortfolioContainer = styled.div`
   background-color: #b9d8f0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   justify-content: center;
   padding: 60px 0;
+  overflow: hidden;
 
   @media screen and (min-width: 1400px) {
     flex-direction: row;
@@ -39,10 +40,11 @@ export const WorkWrapper = styled.div`
   flex-direction: column;
   z-index: 1;
   order: 1;
-  width: 60%;
+  width: 80%;
   max-width: 900px;
   justify-content: center;
-  margin-left: 25%;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 1400px) {
     order: 2;
