@@ -16,14 +16,32 @@ export const HeroContainer = styled.div`
   overflow: hidden;
 `;
 
-export const HeroBg = styled.img`
+export const HeroDesktopBg = styled.img`
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   height: 100%;
   width: 100%;
-`;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: unset;
+  }
+`
+
+export const HeroMobileBg = styled.img`
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`
 
 export const HeroContent = styled.div`
   z-index: 3;
@@ -36,18 +54,19 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1Top = styled.h1`
-  color: #fff;
-  font-size: 56px;
+  color: #000;
+  font-size: 32px;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 480px) {
     font-size: 40px;
+    color: #fff;
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
   }
-`;
+`
 
 export const HeroH1Bottom = styled.h1`
   color: #1e90ff;

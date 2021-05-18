@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import HeroImage from '../../images/dental-hero.jpg'
 import { Button } from '../ButtonElement'
 import { Link } from 'react-scroll'
+import HeroDesktop from '../../images/dental-hero-desktop.jpg'
+import HeroMobile from '../../images/dental-hero-mobile.jpeg'
 import {
   HeroContainer,
-  HeroBg,
+  HeroDesktopBg,
+  HeroMobileBg,
   HeroContent,
   HeroH1Top,
   HeroH1Bottom,
@@ -24,7 +26,8 @@ const HeroSection = () => {
   }
   return (
     <HeroContainer>
-      <HeroBg src={HeroImage}></HeroBg>
+      <HeroDesktopBg src={HeroDesktop}></HeroDesktopBg>
+      <HeroMobileBg src={HeroMobile}></HeroMobileBg>
       <HeroContent>
         <HeroH1Top>Websites</HeroH1Top>
         <HeroH1Bottom>for Dentists</HeroH1Bottom>
@@ -39,7 +42,7 @@ const HeroSection = () => {
             smooth={true}
             duration={500}
             spy={true}
-            exact='true'
+            exact={true}
             offset={-80}
           >
             Request a Quote {hover ? <ArrowForward /> : <ArrowRight />}

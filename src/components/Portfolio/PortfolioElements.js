@@ -5,10 +5,17 @@ export const PortfolioContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
   justify-content: center;
+  width: fit-content;
+  block-size: fit-content;
+  padding: 30px 0;
 
   @media screen and (min-width: 1400px) {
     flex-direction: row;
+    height: 100vh;
+    padding: 0;
   }
 `
 
@@ -77,10 +84,13 @@ export const DescriptionP = styled.p`
 `
 
 export const PortfolioSlide = styled.div`
-width: 100%;
-height: 100%;
+  max-width: 600px;
+
+  @media screen and (min-width: 1400px) {
+    max-width: 100%;
+    height: auto;
+  }
 `
 
 export const Portfolioimg = styled.img`
-
 `
