@@ -35,20 +35,20 @@ export const ContactHeader = styled.h1`
 
 export const ContactH1 = styled.h1`
   color: #fff;
-  font-size: 32px;
+  font-size: 2rem;
 
   @media screen and (min-width: 768px) {
-    font-size: 56px;
+    font-size: 4rem;
   }
 
 `
 
 export const ContactH2 = styled.h1`
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 16px;
 
   @media screen and (min-width: 768px) {
-    font-size: 48px;
+    font-size: 3rem;
   }
 `

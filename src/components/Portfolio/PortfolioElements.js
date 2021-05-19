@@ -58,29 +58,29 @@ export const WorkWrapper = styled.div`
 
 export const DescriptionH1 = styled.h1`
   color: #000000;
-  font-size: 36px;
+  font-size: 2rem;
 
-  @media screen and (max-width: 1400px) {
-    font-size: 40px;
+  @media screen and (min-width: 480px) {
+    font-size: 3rem;
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  @media screen and (min-width: 1400px) {
+    font-size: 4rem;
   }
 `
 
 export const DescriptionP = styled.p`
   margin-top: 24px;
   color: black;
-  font-size: 20px;
+  font-size: 1rem;
   text-align: left;
 
-  @media screen and (max-width: 1400px) {
-    font-size: 20px;
+  @media screen and (min-width: 480px) {
+    font-size: 1.5rem;
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+  @media screen and (min-width: 1400px) {
+    font-size: 2rem;
   }
 `
 

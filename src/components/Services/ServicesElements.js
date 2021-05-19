@@ -39,13 +39,18 @@ export const ServicesWrapper = styled.div`
   flex-direction: column;
   order: 2;
   z-index: 1;
-  width: 90%;
+  width: 80%;
+
+  @media screen and (min-width: 375px) {
+    margin-top: 60px;
+  }
 
   @media screen and (min-width: 900px) {
     display: grid;
     grid-template-columns: repeat(2, minmax(240px, 0.8fr));
     height: 20%;
-    margin-top: 80px;
+    margin-top: 100px;
+    justify-content: center;
   }
 
   @media screen and (min-width: 1400px) {
@@ -53,9 +58,11 @@ export const ServicesWrapper = styled.div`
     flex-direction: column;
     order: 1;
     width: 50%;
+    height: 100%;
     max-width: 1100px;
     align-items: stretch;
     margin-left: 10%;
+    justify-content: center;
   }
 `
 
@@ -82,19 +89,24 @@ export const Service = styled.div`
   padding-top: 0;
   padding-bottom: 18px;
   color: #000000;
-  font-size: 14px;
+  font-size: .8rem;
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 
+  @media screen and (min-width: 375px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   @media screen and (min-width: 768px) {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 
   @media screen and (min-width: 1400px) {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 2rem;
+    line-height: 2rem;
     padding-bottom: 60px;
   }
 `
@@ -226,10 +238,10 @@ export const ToolsLarge = styled(Tools32)`
 
 export const DescriptionH1 = styled.h1`
   color: #000000;
-  font-size: 24px;
+  font-size: 1.5rem;
 
   @media screen and (min-width: 768px) {
-    font-size: 40px;
+    font-size: 3rem;
   }
 `;
 
@@ -237,11 +249,11 @@ export const DescriptionH1 = styled.h1`
 export const DescriptionP = styled.p`
   margin-top: 24px;
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 `;
 
