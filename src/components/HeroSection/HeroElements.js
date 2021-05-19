@@ -59,6 +59,8 @@ export const HeroH1Top = styled.h1`
   color: #000;
   font-size: 2rem;
   text-align: center;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
 
   @media screen and (min-width: 480px) {
     font-size: 4rem;
@@ -74,6 +76,8 @@ export const HeroH1Bottom = styled.h1`
   color: #1e90ff;
   font-size: 2rem;
   text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 
   @media screen and (min-width: 480px) {
     font-size: 4rem;
