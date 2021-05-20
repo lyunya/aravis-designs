@@ -24,7 +24,7 @@ export const ServicesContainer = styled.div`
   min-height: -webkit-fill-available;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   overflow: hidden;
   
    @media screen and (min-width: 1400px) {
@@ -58,11 +58,11 @@ export const ServicesWrapper = styled.div`
     flex-direction: column;
     order: 1;
     width: 50%;
-    height: 100%;
+    height: 80%;
+    margin-top: 0px;
     max-width: 1100px;
-    align-items: stretch;
     margin-left: 10%;
-    justify-content: center;
+    justify-content: space-around;
   }
 `
 
@@ -89,7 +89,7 @@ export const Service = styled.div`
   padding-top: 0;
   padding-bottom: 18px;
   color: #000000;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -102,9 +102,10 @@ export const Service = styled.div`
   @media screen and (min-width: 768px) {
     font-size: 1.5rem;
     line-height: 1.5rem;
+    
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1500px) {
     font-size: 2rem;
     line-height: 2rem;
     padding-bottom: 60px;
