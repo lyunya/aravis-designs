@@ -7,7 +7,6 @@ import {
   HeroDesktopBg,
   HeroContent,
   HeroH1Top,
-  HeroH1Bottom,
   HeroP,
   HeroContactBtnWrapper,
   HeroServicesBtnWrapper,
