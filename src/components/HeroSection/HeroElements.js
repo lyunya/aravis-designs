@@ -23,7 +23,8 @@ export const HeroDesktopBg = styled.img`
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
+  min-height: 100%;
+  width: auto;
 `
 
 
