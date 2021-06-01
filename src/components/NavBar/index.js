@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
-import Logo from '../../images/AD-logo.png'
+import Logo from '../../images/AD-logo-on-white.png'
 import { animateScroll as scroll } from 'react-scroll'
 import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavBarElements'
 
@@ -65,7 +65,7 @@ const NavBar = ({ toggle }) => {
                 exact={true}
                 offset={-80}
               >
-                Let's Talk
+                Contact Us
               </NavBtnLink>
             </NavBtn>
           </NavBarContainer>

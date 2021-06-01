@@ -3,7 +3,6 @@ import {
   MdKeyboardArrowRight,
   MdArrowForward,
   MdKeyboardArrowDown,
-  MdArrowDownward
 } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
@@ -11,6 +10,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: auto;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   position: relative;
@@ -24,26 +24,8 @@ export const HeroDesktopBg = styled.img`
   bottom: 0;
   left: 0;
   height: 100%;
-  width: 100%;
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: unset;
-  }
 `
 
-export const HeroMobileBg = styled.img`
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-`
 
 export const HeroContent = styled.div`
   z-index: 3;
@@ -59,12 +41,11 @@ export const HeroH1Top = styled.h1`
   color: #000;
   font-size: 2rem;
   text-align: center;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
+  font-family: 'Poiret One', cursive;
+  color: #d47a38;
 
   @media screen and (min-width: 480px) {
     font-size: 4rem;
-    color: #fff;
   }
 
   @media screen and (min-width: 768px) {
@@ -76,8 +57,8 @@ export const HeroH1Bottom = styled.h1`
   color: #1e90ff;
   font-size: 2rem;
   text-align: center;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  font-family: 'Poiret One', cursive;
+  color: #d47a38;
 
   @media screen and (min-width: 480px) {
     font-size: 4rem;
@@ -90,7 +71,7 @@ export const HeroH1Bottom = styled.h1`
 
 export const HeroP = styled.p`
   margin-top: 24px;
-  color: black;
+  color: #4d3100;
   font-size: 1rem;
   text-align: left;
   max-width: 600px;
@@ -102,7 +83,7 @@ export const HeroP = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 2rem;
   }
-`;
+`
 
 export const HeroContactBtnWrapper = styled.div`
   margin-top: 32px;
@@ -130,11 +111,29 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 `;
 
 export const ArrowDown = styled(MdKeyboardArrowDown)`
-  font-size: 60px;
-  color: white;
-`;
+  font-size: 7rem;
+  color: #2a527b;
 
-export const ArrowDownward = styled(MdArrowDownward)`
-  font-size: 60px;
-  color: white;
-`;
+  &:hover {
+    animation: bounce 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-12px);
+    }
+  }
+`
+
+

@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import { Button } from '../ButtonElement'
 import { Link } from 'react-scroll'
-import HeroDesktop from '../../images/dental-hero-desktop.jpg'
-import HeroMobile from '../../images/dental-hero-mobile.jpeg'
+import HeroDesktop from '../../images/hero-bg-image-2400.jpg'
 import {
   HeroContainer,
   HeroDesktopBg,
-  HeroMobileBg,
   HeroContent,
   HeroH1Top,
   HeroH1Bottom,
@@ -27,10 +25,9 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroDesktopBg src={HeroDesktop}></HeroDesktopBg>
-      <HeroMobileBg src={HeroMobile}></HeroMobileBg>
       <HeroContent>
-        <HeroH1Top>Websites</HeroH1Top>
-        <HeroH1Bottom>for Dentists</HeroH1Bottom>
+        <HeroH1Top>Dental Websites and Marketing</HeroH1Top>
+        {/* <HeroH1Bottom>for Dentists</HeroH1Bottom> */}
         <HeroP>
           Let us handle your online presence, so you can focus on your patients.
         </HeroP>

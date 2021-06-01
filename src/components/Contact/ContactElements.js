@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
   display: flex;
+  flex-direction: row;
   position: relative;
   height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
-  width: 100%;
   z-index: 1;
   overflow: hidden;
 `
@@ -16,8 +16,13 @@ export const ContactContent = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 100%;
+`
+
+
+export const ContactDescription = styled.div`
+  padding-left: 5%;
 `
 
 export const ContactBg = styled.img`
@@ -27,6 +32,7 @@ export const ContactBg = styled.img`
   left: 0;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 `
 
 export const ContactHeader = styled.h1`
@@ -45,10 +51,10 @@ export const ContactH1 = styled.h1`
 
 export const ContactH2 = styled.h1`
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 16px;
 
   @media screen and (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 `

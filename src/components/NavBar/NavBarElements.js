@@ -3,16 +3,17 @@ import { Link as LinkScroll } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? 'transparent' : '#000')};
-  height: 80px;
-  margin-top: -80px;
+  background: ${({ scrollNav }) => (scrollNav ? 'transparent' : '#ffffff')};
+  height: 100px;
+  margin-top: -100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   position: sticky;
   top: 0;
   z-index: 10;
+  border-bottom: 3px solid #848b96;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -28,20 +29,14 @@ export const NavBarContainer = styled.div`
   padding: 8px 24px;
   margin: 16px 0;
   max-width: 2800px;
-`;
+  
+`
 
 export const NavLogo = styled.img`
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
   display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  max-width: 100%;
-  max-height: 100%;
-`;
+`
 
 export const MobileIcon = styled.div`
   display: none;
@@ -54,9 +49,9 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: #555555;
   }
-`;
+`
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -71,11 +66,11 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 100px;
 `;
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
+  color: #555555;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -84,9 +79,9 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #1e90ff;
+    border-bottom: 3px solid #2a527b;
   }
-`;
+`
 
 export const NavBtn = styled.nav`
 display: flex;
@@ -99,20 +94,15 @@ align-items: center;
 
 export const NavBtnLink = styled(LinkScroll)`
   border-radius: 50px;
-  background: #1e90ff;
+  background: #2a527b;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
-  font-size: 16px;
+  color: #fff;
+  font-size: 1.5rem;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #01bf71;
-    color: #fff;
-  }
-`;
+`
