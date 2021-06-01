@@ -33,10 +33,12 @@ export const NavBarContainer = styled.div`
 `
 
 export const NavLogo = styled.img`
-  justify-self: flex-start;
   cursor: pointer;
-  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
   width: auto;
+  height: auto;
+  display: block;
 `
 
 export const MobileIcon = styled.div`
