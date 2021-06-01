@@ -93,14 +93,6 @@ export const HeroContactBtnWrapper = styled.div`
   align-items: center;
 `;
 
-export const HeroServicesBtnWrapper = styled.div`
-  z-index: 999;
-  position: absolute;
-  bottom: 24px;
-  display: flex;
-  flex-direction: column;
-`;
-
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
@@ -111,9 +103,15 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   font-size: 20px;
 `;
 
-export const ArrowDown = styled(MdKeyboardArrowDown)`
-  font-size: 7rem;
-  color: #2a527b;
+
+export const HeroServicesBtnWrapper = styled.div`
+  z-index: 999;
+  position: absolute;
+  bottom: 32px;
+
+  @media screen and (min-width: 480px) {
+    bottom: 24px;
+  }
 
   &:hover {
     animation: bounce 1.5s;
@@ -135,6 +133,14 @@ export const ArrowDown = styled(MdKeyboardArrowDown)`
       transform: translateY(-12px);
     }
   }
+`
+
+
+export const ArrowDown = styled(MdKeyboardArrowDown)`
+  font-size: 7rem;
+  color: #2a527b;
+
+ 
 `
 
 

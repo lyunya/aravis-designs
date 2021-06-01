@@ -38,6 +38,7 @@ export const ServicesWrapper = styled.div`
   flex-direction: column;
   order: 2;
   z-index: 1;
+  place-items: auto center;
 
   @media screen and (min-width: 375px) {
     margin-top: 60px;
@@ -48,7 +49,7 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: repeat(2, minmax(240px, 0.8fr));
     height: 20%;
     margin-top: 100px;
-    justify-content: center;
+    place-content: center;
   }
 
   @media screen and (min-width: 1400px) {
@@ -69,9 +70,10 @@ export const DescriptionWrapper = styled.div`
   flex-direction: column;
   order: 1;
   z-index: 1;
-  width: 60%;
+  width: 80%;
   max-width: 1100px;
-  justify-content: center;
+  place-items: center;
+
 
   @media screen and (min-width: 1400px) {
     order: 2;
