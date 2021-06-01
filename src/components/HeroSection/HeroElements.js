@@ -10,6 +10,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 100%;
   width: auto;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
@@ -23,8 +24,9 @@ export const HeroDesktopBg = styled.img`
   right: 0;
   bottom: 0;
   left: 0;
-  min-height: 100%;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 `
 
 
@@ -107,11 +109,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 export const HeroServicesBtnWrapper = styled.div`
   z-index: 999;
   position: absolute;
-  bottom: 32px;
-
-  @media screen and (min-width: 480px) {
-    bottom: 24px;
-  }
+  bottom: 4vh;
 
   &:hover {
     animation: bounce 1.5s;

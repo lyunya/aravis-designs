@@ -39,9 +39,11 @@ export const ServicesWrapper = styled.div`
   order: 2;
   z-index: 1;
   place-items: auto center;
+  width: 90%;
 
   @media screen and (min-width: 375px) {
     margin-top: 60px;
+    width: 100%;
   }
 
   @media screen and (min-width: 900px) {
