@@ -18,7 +18,6 @@ export const ServicesContainer = styled.div`
   background-color: #f4ebd0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
@@ -26,8 +25,8 @@ export const ServicesContainer = styled.div`
   padding-top: 30px;
   padding-bottom: 20px;
   overflow: hidden;
-  
-   @media screen and (min-width: 1400px) {
+
+  @media screen and (min-width: 1400px) {
     flex-direction: row;
     padding-top: 0;
     min-height: 100vh;
@@ -39,7 +38,6 @@ export const ServicesWrapper = styled.div`
   flex-direction: column;
   order: 2;
   z-index: 1;
-  width: 80%;
 
   @media screen and (min-width: 375px) {
     margin-top: 60px;
@@ -58,7 +56,7 @@ export const ServicesWrapper = styled.div`
     flex-direction: column;
     order: 1;
     width: 50%;
-    height: 100%;
+    height: fit-content;
     max-width: 1100px;
     align-items: stretch;
     margin-left: 10%;

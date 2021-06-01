@@ -34,11 +34,8 @@ export const NavBarContainer = styled.div`
 
 export const NavLogo = styled.img`
   cursor: pointer;
-  margin: 0 auto;
-  max-width: 100%;
   width: auto;
-  height: auto;
-  display: block;
+  height: 100%;
 `
 
 export const MobileIcon = styled.div`
