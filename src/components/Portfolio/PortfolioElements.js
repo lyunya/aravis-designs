@@ -79,7 +79,7 @@ export const DescriptionP = styled.p`
     font-size: 1.5rem;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1600px) {
     font-size: 2rem;
   }
 `

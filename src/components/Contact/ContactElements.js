@@ -44,9 +44,12 @@ export const ContactH1 = styled.h1`
   font-size: 2rem;
 
   @media screen and (min-width: 768px) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
+  @media screen and (min-width: 1600px) {
+    font-size: 4rem;
+  }
 `
 
 export const ContactH2 = styled.h1`
