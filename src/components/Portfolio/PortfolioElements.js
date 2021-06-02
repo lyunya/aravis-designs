@@ -53,7 +53,6 @@ export const WorkWrapper = styled.div`
 
   @media screen and (min-width: 1400px) {
     order: 2;
-    height: 100%;
     width: 50%;
     padding-top: 0px;
     margin-right: 90px;

@@ -30,7 +30,7 @@ export const ContactBg = styled.img`
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
 `
