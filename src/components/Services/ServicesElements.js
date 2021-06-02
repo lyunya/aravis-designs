@@ -18,7 +18,7 @@ export const ServicesContainer = styled.div`
   background-color: #f4ebd0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   align-items: center;
@@ -26,10 +26,13 @@ export const ServicesContainer = styled.div`
   padding-bottom: 20px;
   overflow: hidden;
 
+  @media screen and (min-width: 768px) {
+    min-height: 100vh;
+  }
+
   @media screen and (min-width: 1400px) {
     flex-direction: row;
     padding-top: 0;
-    min-height: 100vh;
   }
 `
 
@@ -39,18 +42,19 @@ export const ServicesWrapper = styled.div`
   order: 2;
   z-index: 1;
   place-items: auto center;
-  width: 90%;
+  width: auto;
+  
 
   @media screen and (min-width: 375px) {
     margin-top: 60px;
-    width: 100%;
   }
 
   @media screen and (min-width: 900px) {
     display: grid;
     grid-template-columns: repeat(2, minmax(240px, 0.8fr));
     height: 20%;
-    margin-top: 100px;
+    width: auto;
+    margin-top: 50px;
     place-content: center;
   }
 
@@ -79,7 +83,6 @@ export const DescriptionWrapper = styled.div`
 
   @media screen and (min-width: 1400px) {
     order: 2;
-    height: 100%;
     width: 50%;
     margin-right: 90px;
     margin-left: 10%;

@@ -10,13 +10,16 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  min-height: 100%;
   width: auto;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    min-height: 100vh;
+  }
 `
 
 export const HeroDesktopBg = styled.img`

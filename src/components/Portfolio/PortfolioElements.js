@@ -4,16 +4,22 @@ export const PortfolioContainer = styled.div`
   background-color: #b9d8f0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
+
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   justify-content: center;
   padding: 60px 0;
   overflow: hidden;
 
+  @media screen and (min-width: 768px) {
+    min-height: 100vh;
+
+  }
+
   @media screen and (min-width: 1400px) {
     flex-direction: row;
-    height: 100vh;
+
     padding: 0;
   }
 `
