@@ -14,13 +14,12 @@ export const PortfolioContainer = styled.div`
 
   @media screen and (min-width: 768px) {
     min-height: 100vh;
-
+    height: 100%;
   }
 
   @media screen and (min-width: 1400px) {
     flex-direction: row;
-
-    padding: 0;
+    padding: 40px 0;
   }
 `
 
