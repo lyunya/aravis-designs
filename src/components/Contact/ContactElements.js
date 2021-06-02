@@ -8,7 +8,7 @@ export const ContactContainer = styled.div`
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
   z-index: 1;
-  overflow: hidden;
+  overflow: visible;
 `
 
 export const ContactContent = styled.div`

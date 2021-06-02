@@ -10,7 +10,7 @@ export const PortfolioContainer = styled.div`
   min-height: -webkit-fill-available;
   justify-content: center;
   padding: 60px 0;
-  overflow: hidden;
+  overflow: visible;
 
   @media screen and (min-width: 768px) {
     min-height: 100vh;

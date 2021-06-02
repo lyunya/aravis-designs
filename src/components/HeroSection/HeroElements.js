@@ -15,7 +15,7 @@ export const HeroContainer = styled.div`
   min-height: -webkit-fill-available;
   position: relative;
   z-index: 1;
-  overflow: hidden;
+  overflow: visible;
 
   @media screen and (min-width: 768px) {
     min-height: 100vh;
@@ -113,6 +113,7 @@ export const HeroServicesBtnWrapper = styled.div`
   z-index: 999;
   position: absolute;
   bottom: 4vh;
+  display: none;
 
   &:hover {
     animation: bounce 1.5s;
@@ -134,14 +135,17 @@ export const HeroServicesBtnWrapper = styled.div`
       transform: translateY(-12px);
     }
   }
+
+  @media screen and (min-width: 480px) and (min-height: 700px) {
+    display: block;
+  }
 `
 
 
 export const ArrowDown = styled(MdKeyboardArrowDown)`
   font-size: 7rem;
   color: #2a527b;
-
- 
+  
 `
 
 

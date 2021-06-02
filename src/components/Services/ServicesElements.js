@@ -24,7 +24,7 @@ export const ServicesContainer = styled.div`
   align-items: center;
   padding-top: 30px;
   padding-bottom: 20px;
-  overflow: hidden;
+  overflow: visible;
 
   @media screen and (min-width: 768px) {
     min-height: 100vh;
@@ -43,10 +43,9 @@ export const ServicesWrapper = styled.div`
   z-index: 1;
   place-items: auto center;
   width: auto;
-  
 
   @media screen and (min-width: 375px) {
-    margin-top: 60px;
+    margin: 20px 20px;
   }
 
   @media screen and (min-width: 900px) {
