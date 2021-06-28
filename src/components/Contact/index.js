@@ -69,7 +69,7 @@ const ContactSection = () => {
       >
         <ContactContent>
           <ContactH1>
-            Based just outside <br /> Portland, OR
+            Based just outside Portland, OR
           </ContactH1>
           <ContactH2>We serve dentists across the nation</ContactH2>
           {/* <ContactP>araviswebdesigns@gmail.com</ContactP> */}

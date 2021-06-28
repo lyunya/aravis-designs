@@ -14,7 +14,6 @@ const sharedStyles = css`
 export const ContactContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   height: 100vh;
   width: auto;
   /* mobile viewport bug fix */
@@ -22,7 +21,7 @@ export const ContactContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow: visible;
-  
+  align-items: center;
   flex-direction: column;
   background-size: cover;
 
@@ -35,6 +34,8 @@ export const ContactContainer = styled.div`
   @media screen and (min-width: 1400px) {
     flex-direction: row;
     justify-content: center;
+        align-items: flex-start;
+
   }
 `
 
@@ -43,7 +44,7 @@ export const ContactContent = styled.section`
   flex-direction: column;
   z-index: 3;
   order: 1;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media screen and (min-width: 1400px) {
     width: 40%;
@@ -56,6 +57,9 @@ export const ContactH1 = styled.h1`
   font-size: 1.2rem;
 
   @media screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 768px) {
     font-size: 3rem;
   }
 
@@ -68,14 +72,15 @@ export const ContactH2 = styled.h2`
   color: #fff;
   font-size: 1rem;
   margin: 10px 0 10px 0;
+  text-align: center;
 
   @media screen and (min-width: 600px) {
     font-size: 1.5rem;
     margin: 10px 0 0 0;
+    text-align: start;
   }
 
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1600px) {
     font-size: 2rem;
   }
 `
@@ -108,13 +113,17 @@ export const ContactFormWrapper = styled.div`
   order: 2;
   width: 80%;
   max-width: 700px;
+  margin-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
 `
 
 export const ContactForm = styled.form`
   z-index: 3;
   display: flex;
   flex-direction: column;
-  
   padding: 40px;
   background-color: #fff;
   border-radius: 10px;

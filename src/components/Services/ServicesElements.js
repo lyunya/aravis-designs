@@ -107,12 +107,12 @@ export const Service = styled.div`
   @media screen and (min-width: 768px) {
     font-size: 1.5rem;
     line-height: 1.5rem;
+    padding-bottom: 60px;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1600px) {
     font-size: 2rem;
     line-height: 2rem;
-    padding-bottom: 60px;
   }
 `
 
