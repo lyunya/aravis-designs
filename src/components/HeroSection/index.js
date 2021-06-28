@@ -23,7 +23,7 @@ const HeroSection = () => {
   }
   return (
     <HeroContainer>
-      <HeroDesktopBg src={HeroDesktop}></HeroDesktopBg>
+      <HeroDesktopBg src={HeroDesktop} />
       <HeroContent>
         <HeroH1Top>Dental Websites and Marketing</HeroH1Top>
         {/* <HeroH1Bottom>for Dentists</HeroH1Bottom> */}

@@ -8,8 +8,7 @@ export const PortfolioContainer = styled.div`
 
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
-  justify-content: center;
-  padding: 60px 0;
+  justify-content: space-evenly;
   overflow: visible;
 
   @media screen and (min-width: 768px) {
@@ -29,7 +28,7 @@ export const DescriptionWrapper = styled.div`
   z-index: 1;
   order: 2;
   justify-content: center;
-  padding: 0 20px;
+  padding: 10px 20px;
 
   @media screen and (min-width: 1400px) {
     order: 1;

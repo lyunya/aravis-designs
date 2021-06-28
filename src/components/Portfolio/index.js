@@ -35,6 +35,7 @@ const PortfolioSection = () => {
               infiniteLoop
               showStatus={false}
               showArrows={false}
+              showThumbs={false}
             >
               <PortfolioSlide>
                 <Portfolioimg src={Ponderosa} />
