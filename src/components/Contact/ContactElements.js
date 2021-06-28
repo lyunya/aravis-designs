@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 
+
 const sharedStyles = css`
   width: 100%;
   padding: 5px 0;

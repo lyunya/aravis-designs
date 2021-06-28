@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
+
 import {
   ContactContainer,
   ContactContent,
@@ -7,7 +9,6 @@ import {
   ContactH1,
   ContactH2,
   ContactH3,
-  ContactP,
   Input,
   Button,
   Textarea,
@@ -24,6 +25,7 @@ const initialState = {
 const ContactSection = () => {
   const [state, setState] = useState(initialState)
   const [error, setError] = useState('')
+  const [verified, setVerified] = useState(false);
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -36,6 +38,7 @@ const ContactSection = () => {
       }
     }
     setError('')
+    console.log('clicked!')
   }
 
   const handleInput = e => {
@@ -47,6 +50,8 @@ const ContactSection = () => {
       [input]: value,
     }))
   }
+
+  const handleVerify = () => setVerified(true)
 
   return (
     <>
@@ -93,7 +98,8 @@ const ContactSection = () => {
                 <p>{error}</p>
               </ErrorMessage>
             )}
-            <Button>Submit</Button>
+            <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SECRET_KEY} onChange={handleVerify}/>,
+            <Button disabled={!verified}>Submit</Button>
           </ContactForm>
         </ContactFormWrapper>
       </ContactContainer>
