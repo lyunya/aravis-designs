@@ -22,13 +22,14 @@ export const ContactContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow: visible;
-  padding: 50px 100px;
+  
   flex-direction: column;
   background-size: cover;
 
   @media screen and (min-width: 768px) {
     min-height: 100vh;
     height: 100%;
+    padding: 50px 100px;
   }
 
   @media screen and (min-width: 1400px) {
@@ -52,7 +53,7 @@ export const ContactContent = styled.section`
 
 export const ContactH1 = styled.h1`
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.2rem;
 
   @media screen and (min-width: 600px) {
     font-size: 3rem;
@@ -65,11 +66,12 @@ export const ContactH1 = styled.h1`
 
 export const ContactH2 = styled.h2`
   color: #fff;
-  font-size: 1.3rem;
-  margin-top: 16px;
+  font-size: 1rem;
+  margin: 10px 0 10px 0;
 
   @media screen and (min-width: 600px) {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
   }
 
 
@@ -81,6 +83,7 @@ export const ContactH2 = styled.h2`
 export const ContactH3 = styled.h3`
   font-size: 1.2rem;
   text-align: center;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 600px) {
     font-size: 1.5rem;
@@ -146,6 +149,7 @@ export const Button = styled.button`
   cursor: pointer;
   box-sizing: border-box;
   width: 100px;
+  margin-top: 20px;
 `
 
 export const Label = styled.label`
