@@ -98,7 +98,7 @@ const ContactSection = () => {
                 <p>{error}</p>
               </ErrorMessage>
             )}
-            <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SECRET_KEY} onChange={handleVerify}/>,
+            <ReCAPTCHA sitekey="6LeQvGEbAAAAAKK5VglmRp2lKjHvutUnlrGrs1Kp" onChange={handleVerify}/>,
             <Button disabled={!verified}>Submit</Button>
           </ContactForm>
         </ContactFormWrapper>
