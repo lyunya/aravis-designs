@@ -52,7 +52,11 @@ export const ContactContent = styled.section`
 
 export const ContactH1 = styled.h1`
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
+
+  @media screen and (min-width: 600px) {
+    font-size: 3rem;
+  }
 
   @media screen and (min-width: 1600px) {
     font-size: 4rem;
@@ -61,8 +65,13 @@ export const ContactH1 = styled.h1`
 
 export const ContactH2 = styled.h2`
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   margin-top: 16px;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.8rem;
+  }
+
 
   @media screen and (min-width: 768px) {
     font-size: 2rem;
@@ -70,8 +79,13 @@ export const ContactH2 = styled.h2`
 `
 
 export const ContactH3 = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.5rem;
+  }
+
 
   @media screen and (min-width: 768px) {
     font-size: 2rem;
