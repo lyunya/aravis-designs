@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { useMediaQuery } from 'react-responsive'
+
 
 import {
   ContactContainer,
@@ -26,6 +28,10 @@ const ContactSection = () => {
   const [state, setState] = useState(initialState)
   const [error, setError] = useState('')
   const [verified, setVerified] = useState(false);
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -63,7 +69,7 @@ const ContactSection = () => {
       >
         <ContactContent>
           <ContactH1>
-            Based just outside <br /> Portland, OR
+            Based just outside Portland, OR
           </ContactH1>
           <ContactH2>We serve dentists across the nation</ContactH2>
           {/* <ContactP>araviswebdesigns@gmail.com</ContactP> */}
@@ -98,7 +104,7 @@ const ContactSection = () => {
                 <p>{error}</p>
               </ErrorMessage>
             )}
-            <ReCAPTCHA sitekey="6LeQvGEbAAAAAKK5VglmRp2lKjHvutUnlrGrs1Kp" onChange={handleVerify}/>,
+            {isDesktopOrLaptop ? <ReCAPTCHA sitekey="6LeQvGEbAAAAAKK5VglmRp2lKjHvutUnlrGrs1Kp" onChange={handleVerify} size='normal' /> : <ReCAPTCHA sitekey="6LeQvGEbAAAAAKK5VglmRp2lKjHvutUnlrGrs1Kp" onChange={handleVerify} size='compact' />}
             <Button disabled={!verified}>Submit</Button>
           </ContactForm>
         </ContactFormWrapper>

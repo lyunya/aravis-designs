@@ -14,7 +14,6 @@ const sharedStyles = css`
 export const ContactContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   height: 100vh;
   width: auto;
   /* mobile viewport bug fix */
@@ -22,18 +21,21 @@ export const ContactContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow: visible;
-  padding: 50px 100px;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
 
   @media screen and (min-width: 768px) {
     min-height: 100vh;
     height: 100%;
+    padding: 50px 100px;
   }
 
   @media screen and (min-width: 1400px) {
     flex-direction: row;
     justify-content: center;
+        align-items: flex-start;
+
   }
 `
 
@@ -42,7 +44,7 @@ export const ContactContent = styled.section`
   flex-direction: column;
   z-index: 3;
   order: 1;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media screen and (min-width: 1400px) {
     width: 40%;
@@ -52,7 +54,14 @@ export const ContactContent = styled.section`
 
 export const ContactH1 = styled.h1`
   color: #fff;
-  font-size: 3rem;
+  font-size: 1.2rem;
+
+  @media screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
 
   @media screen and (min-width: 1600px) {
     font-size: 4rem;
@@ -61,17 +70,30 @@ export const ContactH1 = styled.h1`
 
 export const ContactH2 = styled.h2`
   color: #fff;
-  font-size: 1.8rem;
-  margin-top: 16px;
+  font-size: 1rem;
+  margin: 10px 0 10px 0;
+  text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1600px) {
     font-size: 2rem;
   }
 `
 
 export const ContactH3 = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 600px) {
+    font-size: 1.5rem;
+  }
+
 
   @media screen and (min-width: 768px) {
     font-size: 2rem;
@@ -91,13 +113,17 @@ export const ContactFormWrapper = styled.div`
   order: 2;
   width: 80%;
   max-width: 700px;
+  margin-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
 `
 
 export const ContactForm = styled.form`
   z-index: 3;
   display: flex;
   flex-direction: column;
-  
   padding: 40px;
   background-color: #fff;
   border-radius: 10px;
@@ -132,6 +158,7 @@ export const Button = styled.button`
   cursor: pointer;
   box-sizing: border-box;
   width: 100px;
+  margin-top: 20px;
 `
 
 export const Label = styled.label`
